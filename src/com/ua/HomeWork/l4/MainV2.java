@@ -11,6 +11,7 @@ public class MainV2 {
         int LastIndex = lenght - 1;
         System.out.println(fromInput.toLowerCase());
         System.out.println(fromInput.toUpperCase());
-        System.out.println((fromInput.substring(0, 1) + (fromInput.substring(LastIndex))));
+        System.out.println((fromInput.substring(0,1)) + (fromInput.substring(LastIndex)));
+//        System.out.println((fromInput.substring(0, 1) + (fromInput.substring(LastIndex))));
     }
 }
