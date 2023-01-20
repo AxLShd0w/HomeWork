@@ -6,9 +6,8 @@ public class Main {
         String str = "Powershell";
         int lenght = str.length();
         int LastIndex = lenght - 1;
-
-        System.out.println(str.toUpperCase());
         System.out.println(str.toLowerCase());
+        System.out.println(str.toUpperCase());
         System.out.println((str.substring(0,1)) + (str.substring(LastIndex)));
     }
 }
