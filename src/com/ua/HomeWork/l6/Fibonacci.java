@@ -8,10 +8,10 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter Upto number:");
+        System.out.print("Enter Upto number:");
         int n = scanner.nextInt();
         int firstN = 0, secondN = 1;
-        System.out.println("Fibonacci Series Upto" + n + ": ");
+        System.out.print("Fibonacci Series Upto " + n + ": ");
 
         while (firstN <=n){
             System.out.print(firstN + ", ");
