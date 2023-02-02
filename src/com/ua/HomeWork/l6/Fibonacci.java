@@ -1,21 +1,25 @@
 package com.ua.HomeWork.l6;
 
+
+import java.util.Scanner;
+
+
 public class Fibonacci {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Upto number:");
+        int n = scanner.nextInt();
+        int firstN = 0, secondN = 1;
+        System.out.println("Fibonacci Series Upto" + n + ": ");
 
-        for (int i = 1; i < 11 ; i++) {
-            System.out.print(i + " ");
+        while (firstN <=n){
+            System.out.print(firstN + ", ");
+
+            int nextN = firstN + secondN;
+            firstN = secondN;
+            secondN = nextN;
         }
-    }
-
-    public static void pairing(String[] args) {
-
-        for (int i = 1; i < 101 ; i++) {
-            if (i %2 == 0){
-                System.out.print(i + " ");
             }
-
         }
-    }
-}
+
