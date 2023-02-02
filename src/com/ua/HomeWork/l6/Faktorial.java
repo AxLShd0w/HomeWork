@@ -9,6 +9,6 @@ public class Faktorial {
         for (int i = 1; i <= number; i++) {
             fakt = fakt * i;
         }
-        System.out.println("Faktorlial of "+number+" is: " + fakt);
+        System.out.println("Faktorlial of " + number + " is: " + fakt);
     }
 }

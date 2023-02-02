@@ -1,21 +1,25 @@
 package com.ua.HomeWork.l6;
 
-import java.sql.SQLOutput;
+
+import java.util.Scanner;
+
 
 public class Fibonacci {
 
     public static void main(String[] args) {
-        int n1 = 0, n2 = 1, num;
-        System.out.print(n1 + " " + n2 + " ");
-        while (true) {
-            num = n2 + n1;
-            System.out.print(num + " ");
-            n1 = n2;
-            n2 = num;
-            num++;
-            if (num >= 100) {
-                break;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Upto number:");
+        int n = scanner.nextInt();
+        int firstN = 0, secondN = 1;
+        System.out.println("Fibonacci Series Upto" + n + ": ");
+
+        while (firstN <=n){
+            System.out.print(firstN + ", ");
+
+            int nextN = firstN + secondN;
+            firstN = secondN;
+            secondN = nextN;
+        }
             }
         }
-    }
-}
+
