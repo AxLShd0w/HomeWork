@@ -21,7 +21,6 @@ public class Main {
 
         }
 
-
     static void fillArray (int[] arr, int maxNumber) {
         Random random = new Random();
         for (int i = 0; i < arr.length ; i++) {
