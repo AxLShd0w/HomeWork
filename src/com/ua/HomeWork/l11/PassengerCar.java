@@ -2,7 +2,8 @@ package com.ua.HomeWork.l11;
 
 public class PassengerCar extends Car{
 
-  private int numberOfPassengers;
+    protected int numberOfPassengers;
+    protected String carType;
 
     public int getNumberOfPassengers() {
 
@@ -12,5 +13,19 @@ public class PassengerCar extends Car{
     public void setNumberOfPassengers(int numberOfPassengers) {
 
         this.numberOfPassengers = numberOfPassengers;
+    }
+
+    public String getCarType() {
+        return carType;
+    }
+
+    public void setCarType(String carType) {
+        this.carType = carType;
+    }
+    @Override
+    public String toString() {
+        return "PassengerCar{" +
+                "carType='" + carType + '\'' +
+                '}';
     }
 }

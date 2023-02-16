@@ -2,8 +2,9 @@ package com.ua.HomeWork.l11;
 
 public class CargoCar extends Car{
 
-    private int axisNumber;
-    private String modelOfTrailer;
+    protected int axisNumber;
+    protected String modelOfTrailer;
+    private String carType;
 
     public int getAxisNumber() {
 
@@ -23,5 +24,21 @@ public class CargoCar extends Car{
     public void setModelOfTrailer(String modelOfTrailer) {
 
         this.modelOfTrailer = modelOfTrailer;
+    }
+
+    @Override
+    public void setCarType(String carType) {
+        this.carType = carType;
+    }
+
+    public String getCarType() {
+        return carType;
+    }
+
+    @Override
+    public String toString() {
+        return "CargoCar{" +
+                "carType='" + carType + '\'' +
+                '}';
     }
 }
